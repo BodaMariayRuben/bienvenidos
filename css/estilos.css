@@ -1,0 +1,596 @@
+@font-face {
+    font-family: 'AlexBrush-Regular.ttf'; /* Nombre de la fuente */
+    src: url('../fonts/AlexBrush-Regular.ttf') format('truetype'); /* Ruta al archivo de fuente y formato */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-image:url('https://static.wixstatic.com/media/f31768_a497ac155f4d460db9940102fabfb64b~mv2.png/v1/fill/w_980,h_798,al_t,q_90,usm_0.66_1.00_0.01,enc_auto/f31768_a497ac155f4d460db9940102fabfb64b~mv2.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Cubre todo el contenedor sin distorsión */
+    background-position: center top; /* Centra la imagen en la parte superior */
+    background-color: #FFFAF0;
+    background-position: 50% 0%;
+    font-family: 'Merriweather',serif;
+     width: 100%;
+    height: 100vh;
+    margin: 0; /* Elimina márgenes para que el contenido llegue al borde del marco */
+    padding: 0; /* Elimina relleno para que el contenido llegue al borde del marco */
+
+ /* Asegura que el marco ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+.color-background {
+  background-color: #ffdb94; /* Color de fondo que desees */
+  opacity: 0.10; /* Ajusta la opacidad según tus preferencias */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el fondo de color detrás del contenido */
+}
+/* .background-image {
+  background-image: url('https://static.wixstatic.com/media/f31768_a497ac155f4d460db9940102fabfb64b~mv2.png/v1/fill/w_980,h_798,al_t,q_90,usm_0.66_1.00_0.01,enc_auto/f31768_a497ac155f4d460db9940102fabfb64b~mv2.png');
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 100vh; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+
+.content {
+ 
+  padding: 20px;
+} */
+
+.conten {
+    flex: 1; /* Hace que el contenido se expanda para llenar el espacio restante */
+    padding: 20px; /* Añade un relleno para que el contenido no llegue al borde del marco */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+h1 {
+    font-family: 'Lovers Quarrel', Arial, sans-serif;
+}
+#messageTextarea {
+  height: 100px;
+}
+
+/* estilos.css */
+
+/* Estilos generales para el contenedor */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+/* Estilos para la sección "Mesa de Regalo" */
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+}
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 15000px; 
+
+}
+
+/* Estilos para la sección "Sugerencia de Vestimenta" */
+.sugerencia-vestimenta {
+    /* background-color: #FFFAF0; */
+    border: 0px solid #FFFAF0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px; /* Espacio entre las secciones */
+}
+
+.sugerencia-vestimenta h2 {
+    font-size: 25px;
+    color: #5f5c5c;
+}
+
+.sugerencia-vestimenta h3 {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.imagen-vestimenta img {
+    max-width: 50%;
+    height: auto;
+}
+
+  /* Estilos para la sección de eventos */
+  .event-sections {
+    display: flex;
+    justify-content: space-between; /* Alinea horizontalmente las secciones */
+    padding: 50px;
+    box-sizing: border-box;
+    max-width: 900px; /* Ajusta el ancho máximo de las secciones */
+    margin: 0 auto; /* Centra las secciones horizontalmente */
+}
+
+.event {
+    width: 80%;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    /* background-color: #FFFAF0; */
+    padding: 40px;
+    border-radius: 10px;
+    color: #191717;
+
+}
+
+/* Estilo para el contenedor .event */
+.event {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    text-align: left;
+  }
+  
+  /* Estilo para la imagen */
+
+  
+  .event img {
+      width: 100px;
+    height: auto;
+  }
+  
+  /* Estilo para el título h2 */
+  .event h2 {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+  }
+  .mi-h2-especifico{
+    color: #f29b30;
+  }
+  
+  /* Estilo para el contenedor de elementos del evento */
+  .event-items {
+    display: flex;
+    flex-direction: column; /* Establecer un flujo vertical */
+  }
+  
+  .event-item {
+    display: flex; /* Mantener elementos en fila para alinear los iconos y el contenido */
+    align-items: center; /* Centrar verticalmente los elementos dentro de .event-item */
+    margin-bottom: 10px; /* Espacio vertical entre los .event-item */
+  }
+  .icon {
+    display: flex; /* Mantener elementos en fila para alinear las imágenes */
+    justify-content: flex-end; /* Alinear las imágenes a la derecha */
+    margin-right: 10px; /* Espacio horizontal entre las imágenes y la hora/texto */
+  }
+  /* Estilo para la imagen del icono */
+  .icon-image {
+    max-width: 50px; /* Ajusta el ancho máximo de la imagen */
+    margin-right: 20px; /* Separación horizontal entre la imagen y el siguiente elemento */
+  }
+  
+  /* Estilo para cada elemento del evento */
+  .event-item {
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    margin: 2px 0; /* Separación vertical entre cada .event-item */
+  }
+
+/* Estilo para el icono */
+.icon {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* Estilo para la hora del evento */
+.event-time {
+    margin-right: 10px; /* Separación horizontal entre .icon-image y .event-time */
+  }
+
+/* Estilo para los elementos <p> */
+.event p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+.event h2,
+.event p {
+    margin: 10px 0; /* 10px de separación arriba y abajo, 0 a los lados */
+}
+.event h3{
+    color: #000000;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+
+.event-image {
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 100%; /* Ajustar el ancho máximo */
+  height: auto; /* Mantener la proporción original */
+}
+.event-label {
+    font-weight: bold; /* Estilo personalizado para etiquetas */
+  }
+
+
+
+.map-button-container {
+    margin-top: 0px;
+    text-align: center; 
+    /* Espacio entre el botón y las secciones de evento */
+}
+.btn.btn-outline-info.btn-block {
+  max-width: none; /* Establece el ancho máximo deseado */
+  margin: 0 auto; /* Centra el botón horizontalmente dentro del contenedor */
+  width: 40%;
+}
+
+.mesa-de-regalos {
+  max-width: 600px;
+    margin-top: 70px; /* Espacio entre la sección "Mesa de Regalos" y el botón */
+}
+
+  
+
+/* Estilos para los campos editables */
+.editable-field {
+    border: 1px solid #FFFAF0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500%;
+    margin: 5px 0;
+    
+}
+
+#formulario {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente por defecto */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(245, 242, 242, 0.951);
+    transition: background-color 0.3s; /* Agregar una transición para suavizar el cambio de color */
+}
+
+#formulario:hover, #formulario:focus {
+    background-color: rgba(255, 255, 255, 1); /* Fondo completamente opaco al pasar el ratón o enfocar */
+}
+
+.formulario {
+    width: 500px;
+    margin: 0 auto;
+    
+}
+.h2{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h2 {
+   
+
+   
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 1px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    /* background-color: #ffffff; */
+}
+
+select {
+    height: 50px;
+}
+/* .campo input[type="text"],
+.campo input[type="tel"] {
+    width: 450px;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+} */
+.campo.mensaje textarea {
+    width: 2500%;
+    height: 1500px;
+    padding: 5px;
+    font-size: 50px;
+}
+.campo.confirmacion input[type="text"] {
+    width: 80%;
+    height: 20px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #888;
+    border: 0px solid #ccc;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pUnTVX{
+    display:flex;
+    flex:2;
+    flex-direction:column;
+    position:relative}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#enviar {
+    background-color: #f7dea8;
+    color: rgb(0, 0, 0);
+}
+
+#whatsapp {
+    background-image: url('../img/whatsapp.png');
+    background-size: contain; /* Ajusta el tamaño de la imagen según el tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: rgba(247, 222, 168, 0.2); /* Fondo semitransparente */
+   
+    font-size: 12px;
+    padding: 50px;
+    border-radius: 10px;
+   
+    transition: background-color 0.2s; /* Agregar una transición para suavizar el cambio de color */
+}
+
+#whatsapp:hover, #whatsapp:focus {
+    background-color: #f8f7f6; /* Cambia el fondo al pasar el ratón o enfocar */
+   
+    font-size: 12px;
+}
+
+
+/* Encabezado con la imagen de fondo */
+header {
+    /* background-image: url('../img/img6.png'); */
+     /* Agrega la nueva imagen de fondo */
+   
+}
+/* Tamaño de fuente predeterminado */
+.disp h1 {
+  line-height:100px;
+}
+
+.displa {
+
+  color: #945407;
+  font-family: 'Lovers Quarrel';
+  font-size: 85px;
+ 
+
+}
+
+
+
+/* Tamaño de fuente para pantallas pequeñas (hasta 393px) */
+@media (max-width: 393px) {
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Tamaño de fuente para pantallas medianas (entre 394px y 767px) */
+@media (min-width: 394px) and (max-width: 767px) {
+    header h1 {
+        font-size: 6rem;
+    }
+}
+
+/* Tamaño de fuente para pantallas normales (768px en adelante) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 8rem;
+    }
+}
+
+
+/* Estilos para el contenido en la parte superior */
+.content {
+    font-size: 60px;
+    padding: 20px;
+    background-color: rgba(243, 239, 239, 0.5); /* Fondo semi-transparente para que el texto sea legible */
+}
+.content2 h1{
+    color: #945407;
+    font-family: 'Lovers Quarrel';
+    font-size: 65px;
+
+
+}
+.content2 p {
+    margin: 0; /* Elimina el margen predeterminado de las etiquetas <p> */
+    padding: 10px 0; /* Espacio vertical alrededor de las etiquetas <p> */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1220px){
+    .conten,.event,
+    .event-container,
+    .header-container,
+    .contenedor,.content2,
+    .mesa-de-regalos,.contenedor,.contenido.cont,.contenedor2,.imagen-vestimenta{
+        max-width: 1000px;
+        padding: 0 20px;
+    
+
+    }
+   
+}
+/* Cambia la dirección de flexión a columna en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .event-container,.event,.event-sections {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* Estilo para pantallas más pequeñas (menos de 393px) */
+/* Estilos para pantallas grandes */
+.content2 h1.display-4 {
+    font-size: 36px; /* Tamaño de texto para pantallas grandes */
+  }
+  
+  .content2 img {
+    max-width: 100%; /* Ajustar el ancho de la imagen al contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (max-width: 768px) {
+    .content2 h1.display-4 {
+      font-size: 24px; /* Tamaño de texto para pantallas medianas */
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 375px) {
+    .content2 h1.display-4 {
+      font-size: 18px; /* Tamaño de texto para pantallas pequeñas */
+    }
+  
+    .content2 img {
+      max-width: 80%; /* Ajustar el ancho de la imagen al contenedor */
+    }
+  }
+  h1 {
+    text-align: center;
+  }
+  .image-container {
+    position: absolute;
+    
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra completamente */
+  }
+   .background-image {
+   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+
+  
+  /*
+  .header-container {
+    background-image: url('../img/img6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  
+
+    @media (min-width: 393px) {
+        .background-image {
+          background-attachment: fixed;
+        }
+      }
+      @media (max-width: 340px) {
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh; /* Asegura que todo el contenido se muestre centrado verticalmente */
+        }
+        
+        /* Agrega estilos adicionales según sea necesario para el contenido dentro del body */
+      }
+      .responsive-image {
+     
+        max-width: 100%; /* La imagen se ajustará al ancho de la pantalla */
+        height: auto;
+      }
+      .campo-input {
+        border: 1px solid #d5d2d2 !important;
+        border-radius: 5px !important; /* Añade bordes redondeados */
+        padding: 20px;
+        height: 50px; /* Puedes ajustar el valor según tus necesidades */
+      }
+      .svg-container {
+      margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Estilo adicional para limitar el ancho en pantallas pequeñas */
+    @media (max-width: 768px) {
+        .svg-container {
+            max-width: 100%;
+        }
+    }
+ 
+    .texto-verde {
+      font-family: 'Lovers Quarrel';
+      color: rgb(10, 248, 10);
+    }
+    
+    /* Estilo cuando no está enfocado */
+.form-floating label {
+  opacity: 0.5; /* Reduce la opacidad del label */
+  transform: translateY(10px); /* Mueve el label hacia arriba */
+}
+
+/* Estilo cuando está enfocado */
+.form-floating textarea:focus + label {
+  opacity: 1; /* Restablece la opacidad del label */
+  transform: translateY(0); /* Restablece la posición del label */
+}
+.custom-textarea {
+  height: 1500px; /* Ajusta la altura según lo necesites */
+}
