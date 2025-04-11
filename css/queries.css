@@ -11,6 +11,17 @@
 
 }
 
+@media screen and (min-width: 450px) {
+    .hero {
+        background-image: url("../img/hero-min.jpg");
+    }
+}
+@media screen and (max-width: 449px) {
+    .hero {
+         background-image: url("../img/DSD_0214.jpg");
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .hero .hero-content {
         padding-top: 50%;
