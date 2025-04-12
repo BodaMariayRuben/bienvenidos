@@ -70,6 +70,12 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	//conndicion añadir 0 en menos de 10
+	if(days< 10){
+		days = "0" + days ;
+		}
+	if(hours< 10){
+		hours = "0" + hours ;
+		}
 	if(minutes< 10){
 		minutes = "0" + minutes ;
 		}
